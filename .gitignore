@@ -1,0 +1,27 @@
+settings.js
+node_modules
+notes/*
+backups/*
+!backups/note.txt
+tmp/*
+!tmp/note.txt
+db/*
+!db/note.txt
+site.db
+sessions.db
+public/fonts/*
+!public/fonts/README.md
+public/css/gulp.css
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.cache
+.project
