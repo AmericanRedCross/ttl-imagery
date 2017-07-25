@@ -199,6 +199,7 @@ var mly = new Mapillary.Viewer(
 
 map.on('load', function(e){
   d3.csv("/data/data-viewer-points.csv", function(error, data){
+    console.log("d3.csv error: ", error);
     initLayers(data);
   })
 })
