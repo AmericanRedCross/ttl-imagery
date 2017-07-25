@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
   <title>Tindog Tabang Leyteno</title>
 
 
 
-  <link rel="stylesheet" href="/css/gulp.css">
+  <link rel="stylesheet" href="css/gulp.css">
   <!-- mapboxGL/mapillary css -->
   <link href='https://unpkg.com/mapillary-js@2.6.0/dist/mapillary.min.css' rel='stylesheet' />
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
@@ -80,9 +80,9 @@
     <select id='brgy-select'></select>
   </div>
   <div class="medium-9 small-6 columns end">
-    <button type="button" onClick="toggleOam(this);" class="hollow button secondary layer-oam layer-button"><img class="layer-btn-img" alt="Drone icon - Created by Peter Van Criel from Noun Project" src="/img/drone.png"> Aerial imagery</button>
-    <button type="button" onClick="toggleMapillary(this);" class="hollow button secondary layer-button disabled"><img class="layer-btn-img"  src="/img/mapillary.png"> Mapillary</button>
-    <button type="button" onClick="toggleOsm(this);" class="hollow button secondary layer-button disabled"><img class="layer-btn-img" src="/img/house.png"> OSM buildings</button>
+    <button type="button" onClick="toggleOam(this);" class="hollow button secondary layer-oam layer-button"><img class="layer-btn-img" alt="Drone icon - Created by Peter Van Criel from Noun Project" src="img/drone.png"> Aerial imagery</button>
+    <button type="button" onClick="toggleMapillary(this);" class="hollow button secondary layer-button disabled"><img class="layer-btn-img"  src="img/mapillary.png"> Mapillary</button>
+    <button type="button" onClick="toggleOsm(this);" class="hollow button secondary layer-button disabled"><img class="layer-btn-img" src="img/house.png"> OSM buildings</button>
   </div>
 </div>
 
@@ -109,7 +109,7 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/js/what-input.js" ></script>
+<script src="js/what-input.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/queue.v1.min.js"></script>
@@ -199,7 +199,7 @@ var mly = new Mapillary.Viewer(
   });
 
 map.on('load', function(e){
-  d3.csv("/data/data-viewer-points.csv", function(error, data){
+  d3.csv("data/data-viewer-points.csv", function(error, data){
     console.log("d3.csv error: ", error);
     initLayers(data);
   })
