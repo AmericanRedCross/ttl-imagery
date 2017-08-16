@@ -294,7 +294,7 @@ function initLayers(data) {
     "maxzoom": 14
   };
   map.addSource("mapillary", mapillarySource);
-  map.loadImage('/img/view.png', (error, image) => {
+  map.loadImage('img/view.png', (error, image) => {
     if(error) console.log(error);
     map.addImage('viewAngle', image);
   });
